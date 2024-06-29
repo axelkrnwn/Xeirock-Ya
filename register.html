@@ -26,70 +26,80 @@
 </header>
 
 
-<div style="position: relative; height: 150vh; background: url('./asset/location_1.jpg'); background-repeat: no-repeat; background-size: cover; height: 90vh;">
-        <div action="" id = "form-1">
-            <div class="form-image" id = "form-image">
-                <img src="./asset/landing_image.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;">
-            </div>
-            <form class="form-fields" id = "first-form">
-                <h2 style="padding: 0; margin: 0;">Personal Information</h2>
-                <div class="field-line-1">
-                    <div style="width:50%;">
-                        <label for="name" style="font-family: 'Poppins';">Name</label><br>
-                        <input type="text" id="name" required style="width: 90%;outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray;  padding-top: 5px; padding-bottom: 5px; font-size: 14px;" placeholder="Ex : William Christian"><br>
-                    </div>
-                    <div style="width:50%;  padding-top: 10px; padding-bottom: 10px;">
-                        <label for="email" style="font-family: 'Poppins';">Email</label><br>
-                        <input type="email" id="email" required style="width: 90%;outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray;  padding-top: 5px; padding-bottom: 5px;font-size: 14px;" placeholder="Ex : williamqwerty3@gmail.com"><br>
-                    </div>
-                </div>
-                <div class="field-line-2">
-                    <div style="width:50%; padding-top: 10px; padding-bottom: 10px;">
-                        <label for="tel" style="font-family: 'Poppins';">Phone Number</label><br>
-                        <input type="tel" id="tel" required style="width: 80%;outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray; padding-top: 5px; padding-bottom: 5px;font-size: 14px;" placeholder="08123456789"><br>
-                    </div>
-                    <div style="width:50%; padding-top: 10px; padding-bottom: 10px;">
-                        <label for="gender">Gender</label>
-                        <div style="margin-top: 5px;">
-                            <input type="radio" name="gender" id="male"> <label for="">Male</label>
-                            <input type="radio" name="gender" id="female"> <label for="">Female</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="field-line-3">
-                    <div style="width:50%; padding-top: 10px; padding-bottom: 10px;">
-                        <label for="dob" style="font-family: 'Poppins';">DOB</label><br>
-                        <input type="date" id="dob" required style="width: 80%; border-top: none; border-left: none; border-right: none; outline: none; border-bottom: 1px solid gray; padding-top: 5px; padding-bottom: 5px;font-size: 14px;"><br>
-                    </div>
-                </div>
-            <button id ="next-form">Next</button>
-        </form>
-        <form class="form-fields2" id = "second-form">
-            <div style="width: 100%; padding-top: 10px; padding-bottom: 10px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                <h2 style="padding: 0; margin: 0;">Membership Detail</h2>
-                <div>
-                    <label for="type" style="font-family: 'Poppins';">Membership Type</label><br>
-                    <select name="" id="type"  style="width: 80%;outline: none;  border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray; padding-top: 5px; padding-bottom: 5px;font-size: 14px;">
-                        <option value="1">Regular</option>
-                        <option value="2">Premium</option>
-                        <option value="3">Royal</option>
-                    </select>
-                    <div style="width: 50%; padding-top: 10px; padding-bottom: 10px;">
-                        <label for="num" style="font-family: 'Poppins';">Membership Duration (in month)</label><br>
-                        <input type="number" id="num" required style="width: 80%; outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray; padding-top: 5px; padding-bottom: 5px;font-size: 14px;" min="6" max="12" value="6"><br>
-                    </div>
-                </div>
-                <div style="display: flex; flex-direction: column; row-gap: 20px;">
-                    <div>
-                        <input type="checkbox" id="num" required="">
-                        <label for="num" style="font-family: Arial, Helvetica, sans-serif;">I agree to the terms and conditions</label>
-                    </div>
-                    <button id ="submit-form">Submit</button>
-                </div>
-            </div>
-        </fo>
-    </d>
+<div style="position: relative; background: url('./asset/location_1.jpg'); background-repeat: no-repeat; background-size: cover; height: 110vh;">
 </div>
+
+    <form id = "form-1">
+        <div class="form-image" id = "form-image">
+            <img src="./asset/landing_image.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+        </div>
+        <div class="form-fields">
+            <h4 style="text-align: center; padding: 0; margin: 0">Personal Information</h4>
+
+            <div style="width:100%;">
+                <label for="name" style="font-family: 'Poppins';">Name</label><br>
+                <input type="text" id="name"  style="width: 100%;outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray;  padding-top: 5px; padding-bottom: 5px; font-size: 14px;" placeholder="Ex : William Christian"><br>
+            </div>
+
+            <div style="width:100%;">
+                <label for="email" style="font-family: 'Poppins';">Email</label><br>
+                <input type="email" id="email"  style="width: 100%;outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray;  padding-top: 5px; padding-bottom: 5px; font-size: 14px;" placeholder="Ex : williamqwerty30@gmail.com"><br>
+            </div>
+
+            <div style="width:100%;">
+                <label for="tel" style="font-family: 'Poppins';">Phone Number</label><br>
+                <input type="tel" id="tel"  style="width: 100%;outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray;  padding-top: 5px; padding-bottom: 5px; font-size: 14px;" placeholder="Ex : 081234567890"><br>
+            </div>
+
+            <div style="width:100%;">
+                <label for="dob" style="font-family: 'Poppins';">DOB</label><br>
+                <input type="date" id="dob"  style="width: 100%;outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray;  padding-top: 5px; padding-bottom: 5px; font-size: 14px;" placeholder="DD/MM/YYYY"><br>
+            </div>
+            <div style="width: 100%; display: flex; flex-direction: column">
+                <h4 style="font-weight: 400; padding: 0; margin: 0">Gender</h4>
+                <div style="width:100%; display: flex; column-gap: 10px; align-items: center">
+                    <input type="radio" name="gender" id = "male"> <label for="male">Male</label>
+                    <input type="radio" name="gender" id = "female"><label for="female">Female</label>
+                </div>
+            </div>
+
+
+
+            <button type="button" id="next-btn">Next</button>
+
+        </div>
+        <div class="form-fields">
+            <h4 style="text-align: center; padding: 0; margin: 0">Membership Detail</h4>
+            <div style="width:100%;">
+                <label for="type" style="font-family: 'Poppins';">Membership Type</label><br>
+                <select name="" id="type"  style="width: 100%;outline: none;  border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray; padding-top: 5px; padding-bottom: 5px;font-size: 14px;">-->
+                    <option value="1">Regular</option>
+                    <option value="2">Premium</option>
+                    <option value="3">Royal</option>
+                </select>
+            </div>
+
+            <div style="width:100%;">
+                <label for="num" style="font-family: 'Poppins';">Membership Duration (in month)</label><br>
+                <input type="number" id="num"  style="width: 100%; outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray; padding-top: 5px; padding-bottom: 5px;font-size: 14px;" min="6" max="12" value="6"><br>
+            </div>
+
+            <div style="width:100%;">
+                <label for="reason" style="font-family: 'Poppins';">Reason</label><br>
+                <input id="reason"  style="width: 100%;outline: none; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid gray;  padding-top: 5px; padding-bottom: 5px; font-size: 14px;" placeholder="Ex : Type reason why you want to be membership here.."/><br>
+            </div>
+
+            <div style="display: flex; align-items: center; column-gap: 20px">
+                <input id="check" type="checkbox"  style="font-size: 14px;"/>
+                <label for="check" style="font-family: 'Poppins';">I agree to term and conditions</label><br>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; width: 100%">
+                <button type="button" id="back-btn">Back</button>
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+            </div>
+        </form>
 
     <footer style="display: flex; align-items: center; justify-content: center; text-align: center; width: 100%; background-color: #fbeecd; color: #250303; height: 200px;">
         <div>
@@ -108,5 +118,3 @@
 </body>
 <script src="register.js"></script>
 </html>
-
-            
