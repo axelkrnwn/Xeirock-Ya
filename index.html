@@ -59,8 +59,13 @@
                 <button id="learn-more-button" onclick="window.location.href='/menu.html'">Learn more about XeirocK-ya</button>
             </div>
             <div id="subsction-img">
+                <div>
                 <img src="./asset/location_2.jpg" alt="">
+                </div>
+                <div>
                 <img src="./asset/location_3.jpg" alt="">
+                </div>
+
             </div>
         </div>
     </div>
@@ -90,7 +95,7 @@
     Don't miss out on this amazing offer! Mark your calendars and come enjoy your favorite ramen at a fraction of the price. <b>Terms and conditions apply</b>. See you there for a ramen-tastic celebration! 🥳✨</pre>
                 </div>
             </div>
-            <div class="event-image">
+            <div class="event-image" style="display: flex; justify-content: end">
                 <img src="./asset/promo_1.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="">
             </div>
         </div>
@@ -114,16 +119,16 @@
         <h4 id="commercial-text" style="text-align: center; margin-top: 5vh; border: none;">Commercial Video</h4>
         <div class="video-container">
             <div class="video">
-                <iframe width="1000" height="1000" src="https://www.youtube.com/embed/jK2DvnQQiew?si=7zmk_feqsju3kTKH&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 80vw; height: 90vh; "></iframe>
+                <iframe width="1000" height="1000" id = "iframe" src="https://www.youtube.com/embed/jK2DvnQQiew?si=7zmk_feqsju3kTKH&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 80vw; height: 90vh; "></iframe>
             </div>
-            <div class="video-border">
-                <img src="asset/vecteezy_transparent-luxury-elegant-gold-border-frame-background_45548939.png" alt="">
+            <div class="video-border" onclick="document.getElementById('iframe').src += '&autoplay=1'">
+                <img src="asset/PngItem_4297347.png" alt="">
             </div>
-        </div>
-        <div class="bottom-container">
         </div>
     </div>
 
+    <div class="bottom-container">
+    </div>
 
     <footer style="display: flex; align-items: center; justify-content: center; text-align: center; width: 100%; background-color: #fbeecd; color: #250303; height: 200px;">
         <div>
