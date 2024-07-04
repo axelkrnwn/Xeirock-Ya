@@ -9,47 +9,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <header style="display: flex; justify-content: space-between;  padding-bottom: 15px; padding-top: 15px; align-items: center; padding-left: 30px; position: sticky; top: 0; z-index: 99; background-color: #f0ca72; padding-right: 30px;">
-    <div style="width: 70%;">
-        <a href="./index.html">
-            <img src="./asset/logo.png" alt="" style="width: 25%; height: auto;">
-        </a>
-    </div>
-    <div style="width: 50%; display: flex;  justify-content: end; gap: 4rem; size: 10px; opacity: 100%; font-weight: bolder; font-size: large;">
-        <a href="./menu.html" style="color: black;" class="nav">Menu</a>
-        <a href="./register.html" style="color: black;" class="nav">Register Membership</a>
-    </div>
-    </header>
+<!--    <header style="display: flex; justify-content: space-between;  padding-bottom: 15px; padding-top: 15px; align-items: center; padding-left: 30px; position: sticky; top: 0; z-index: 99; background-color: #f0ca72; padding-right: 30px;">-->
+<!--    <div style="width: 70%;">-->
+<!--        <a href="./index.html">-->
+<!--            <img src="./asset/logo.png" alt="" style="width: 25%; height: auto;">-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div style="width: 50%; display: flex;  justify-content: end; gap: 4rem; size: 10px; opacity: 100%; font-weight: bolder; font-size: large;">-->
+<!--        <a href="./menu.html" style="color: black;" class="nav">Menu</a>-->
+<!--        <a href="./register.html" style="color: black;" class="nav">Register Membership</a>-->
+<!--    </div>-->
+<!--    </header>-->
 
-    <nav style="display: flex; justify-content: center; size: 10px; font-size: medium; padding-top: 20px; padding-bottom: 20px; column-gap: 100px; background-color: #f8e7bc; z-index: 99; font-weight: 500;">
-        <ul style="display: flex; gap: 5rem; list-style-type: none; opacity: 70%;" class="red-color">
+
+<div class = "header">
+    <header>
+        <a href="./index.html">
+            <img src="./asset/logo.png" alt="" style="width: 50%; height: auto;">
+        </a>
+    </header>
+    <nav>
+        <ul style="display: flex; list-style-type: none;" class="red-color">
             <li>
                 <a href="#about-us" style="color: #250303" class="nav">About Us</a>
             </li>
             <li>
                 <a href="#history" style="color: #250303" class="nav">History</a>
             </li>
-            <li> 
+            <li>
                 <a href="#event" style="color: #250303" class="nav">Ongoing Events & Promo</a>
             </li>
-            <li> 
+            <li>
                 <a href="#commercial-text" style="color: #250303" class="nav">Commercial Video</a>
+            </li>
+            <li>
+                <a href="./menu.html" style="color: #250303" class="nav">Menu</a>
+            </li>
+            <li>
+                <a href="./register.html" style="color: #250303" class="nav">Register</a>
             </li>
         </ul>
     </nav>
-    <div class="landing_image">
-    </div>
+</div>
+<div class="landing_image">
+</div>
 
-    <div class="container-about-us reveal" id = "about-us">
+<div class="container-about-us reveal" id = "about-us">
         <div id="subsection-1" class="about-us-section">
             <div style="display: flex; justify-content: center; align-items: center;" id = "about-us-img-1">
                 <img src="./asset/location_1.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="">
             </div>
             <div>
-                <pre style="white-space: pre-wrap; text-align: justify;">       However our Ramen has the completely same quality level compare to which of Japan. In addition, Toripaitan Ramen is popular to women because which broth includes lots of collagen that is good for beauty. Now, it's time to have a great meal experience!
-                </pre>
+                <pre style="white-space: pre-wrap; text-align: justify;">       However our Ramen has the completely same quality level compare to which of Japan. In addition, Toripaitan Ramen is popular to women because which broth includes lots of collagen that is good for beauty. Now, it's time to have a great meal experience!</pre>
+            </div>
+            <div>
+                <pre style="white-space: pre-wrap; text-align: justify;">       Also our Ramen shop gives you chance to register yourself at XeiRocK-Ya Membership! With this you can get more valuable information about our ramen shop so you will be always updated! So what are ou waiting for? Register yourself as XeiRocK-Ya Membership Now!!</pre>
+<!--            <pre style="white-space: pre-wrap; text-align: justify;">       Also our Ramen shop has the completely same quality level compare to which of Japan. In addition, Toripaitan Ramen is popular to women because which broth includes lots of collagen that is good for beauty. Now, it's time to have a great meal experience!</pre>-->
             </div>
         </div>
         <div id="subsection-2" class="about-us-section">
@@ -116,13 +134,15 @@
     </div>
 
     <div class = "reveal">
-        <h4 id="commercial-text" style="text-align: center; margin-top: 5vh; border: none;">Commercial Video</h4>
         <div class="video-container">
-            <div class="video">
-                <iframe width="1000" height="1000" id = "iframe" src="https://www.youtube.com/embed/jK2DvnQQiew?si=7zmk_feqsju3kTKH&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 80vw; height: 90vh; "></iframe>
-            </div>
-            <div class="video-border" onclick="document.getElementById('iframe').src += '&autoplay=1'">
-                <img src="asset/PngItem_4297347.png" alt="">
+            <h4 id="commercial-text" style="text-align: center; border: none;">Commercial Video</h4>
+            <div class="container-video">
+                <div class="video">
+                    <iframe width="1000" height="1000" id = "iframe" src="https://www.youtube.com/embed/jK2DvnQQiew?si=7zmk_feqsju3kTKH&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-border" onclick="document.getElementById('iframe').src += '&autoplay=1'">
+                    <img src="asset/PngItem_4297347.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -130,18 +150,57 @@
     <div class="bottom-container">
     </div>
 
-    <footer style="display: flex; align-items: center; justify-content: center; text-align: center; width: 100%; background-color: #fbeecd; color: #250303; height: 200px;">
-        <div>
-           <div style="display: flex; justify-content: center; column-gap: 20px;" class="red-color">
-            <a href="https://instagram.com">
-                <img src="./asset/Instagram.png" width="30px" height="30px" alt="" style="filter: invert(100%);">
-            </a>
-            <a href="https://tiktok.com">
-                <img src="./asset/tiktok.png" width="30px" height="30px" alt="" style="filter: invert(100%);">
-            </a>
-           </div>
+    <footer style="display: flex; align-items: center; justify-content: space-around; text-align: center; width: 100%; background-color: #fbeecd; color: #250303; height: 350px;">
 
-        <h4 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: x-large; font-weight: bolder;">© Copyright PT. Joypack Foods Indonesia. All Rights Reserved.</h4>
+        <div class = "footer-section img-footer">
+            <div>
+                <img src="asset/logo.png" alt = "logo">
+            </div>
+            <p>
+                © Copyright PT. Joypack Foods Indonesia. All Rights Reserved.
+            </p>
+        </div>
+        <div style="display: flex; justify-content: start; width: 40%; align-items: start; height: 80%">
+
+            <div class = "footer-section links-footer">
+                <div class = "social-footer">
+                    <h3>Stay In Touch</h3>
+                    <div class="social-media">
+                        <a href="https://instagram.com">
+                            <img src="./asset/Instagram.png" width="25px" height="25px" alt="" style="filter: invert(100%);">
+                        </a>
+                        <a href="https://tiktok.com">
+                            <img src="./asset/tiktok.png" width="25px" height="25px" alt="" style="filter: invert(100%);">
+                        </a>
+                    </div>
+                    <div class="nav-footer">
+                        <h3>Our Links</h3>
+                        <div class="links">
+                            <ul style="list-style-type: none; gap: 5px" class="red-color">
+                                <li>
+                                    <a href="#about-us" style="color: #250303" class="nav">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#history" style="color: #250303" class="nav">History</a>
+                                </li>
+                                <li>
+                                    <a href="#event" style="color: #250303" class="nav">Ongoing Events & Promo</a>
+                                </li>
+                                <li>
+                                    <a href="#commercial-text" style="color: #250303" class="nav">Commercial Video</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pages-footer">
+                <h3>Visit Our Other Pages</h3>
+                <div style="display: flex; flex-direction: column; row-gap: 10px">
+                    <button class = "nav-button" style="margin: 0; border-radius: 5px" onclick="window.location.href = './menu.html'">Menu</button>
+                    <button class = "nav-button" style="margin: 0; border-radius: 5px" onclick="window.location.href = './register.html'">Register</button>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="scroll.js" defer></script>

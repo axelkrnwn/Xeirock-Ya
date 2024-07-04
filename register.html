@@ -11,22 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body style="margin: 0; padding: 0; font-family: 'Poppins';">
-<header style="display: flex; justify-content: space-between;  padding-bottom: 15px; padding-top: 15px; align-items: center; padding-left: 30px; position: sticky; top: 0; z-index: 99; background-color: #f0ca72; padding-right: 30px;">
-    <div style="width: 70%;">
+
+<div class = "header">
+    <header>
         <a href="./index.html">
-            <img src="./asset/logo.png" alt="" style="width: 25%; height: auto;">
+            <img src="./asset/logo.png" alt="" style="width: 50%; height: auto;">
         </a>
-    </div>
-    <div style="width: 50%; display: flex;  justify-content: end; gap: 4rem; size: 10px; opacity: 100%; font-weight: bolder; font-size: large;">
-        <a href="./menu.html" style="color: black;" class="nav">Menu</a>
-        <a href="./register.html" style="color: black;" class="nav">Register Membership</a>
-    </div>
-</header>
+    </header>
+    <nav>
+        <ul style="display: flex; list-style-type: none;" class="red-color">
+            <li>
+                <a href="#about-us" style="color: #250303" class="nav">About Us</a>
+            </li>
+            <li>
+                <a href="#history" style="color: #250303" class="nav">History</a>
+            </li>
+            <li>
+                <a href="#event" style="color: #250303" class="nav">Ongoing Events & Promo</a>
+            </li>
+            <li>
+                <a href="#commercial-text" style="color: #250303" class="nav">Commercial Video</a>
+            </li>
+            <li>
+                <a href="./menu.html" style="color: #250303" class="nav">Menu</a>
+            </li>
+            <li>
+                <a href="./register.html" style="color: #250303" class="nav">Register</a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
-
-<div style="position: relative; background: url('./asset/location_1.jpg') no-repeat;background-size: cover; filter: brightness(0.3); height: 110vh;">
+<div style="position: relative; background: url('./asset/location_1.jpg') no-repeat;background-size: cover; filter: brightness(0.3); height: 130vh;">
 </div>
 
     <form id = "form-1" style="box-sizing: border-box">
@@ -106,20 +125,59 @@
             </div>
         </form>
 
-    <footer style="display: flex; align-items: center; justify-content: center; text-align: center; width: 100%; background-color: #fbeecd; color: #250303; height: 200px;">
-        <div>
-           <div style="display: flex; justify-content: center; column-gap: 20px;" class="red-color">
-            <a href="https://instagram.com">
-                <img src="./asset/Instagram.png" width="30px" height="30px" alt="" style="filter: invert(100%);">
-            </a>
-            <a href="https://tiktok.com">
-                <img src="./asset/tiktok.png" width="30px" height="30px" alt="" style="filter: invert(100%);">
-            </a>
-           </div>
+<footer style="display: flex; align-items: center; justify-content: space-around; text-align: center; width: 100%; background-color: #fbeecd; color: #250303; height: 350px;">
 
-        <h4 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: x-large; font-weight: bolder;">© Copyright PT. Joypack Foods Indonesia. All Rights Reserved.</h4>
+    <div class = "footer-section img-footer">
+        <div>
+            <img src="asset/logo.png" alt = "logo">
         </div>
-    </footer>
+        <p>
+            © Copyright PT. Joypack Foods Indonesia. All Rights Reserved.
+        </p>
+    </div>
+    <div style="display: flex; justify-content: start; width: 40%; align-items: start; height: 80%">
+
+        <div class = "footer-section links-footer">
+            <div class = "social-footer">
+                <h3>Stay In Touch</h3>
+                <div class="social-media">
+                    <a href="https://instagram.com">
+                        <img src="./asset/Instagram.png" width="25px" height="25px" alt="" style="filter: invert(100%);">
+                    </a>
+                    <a href="https://tiktok.com">
+                        <img src="./asset/tiktok.png" width="25px" height="25px" alt="" style="filter: invert(100%);">
+                    </a>
+                </div>
+                <div class="nav-footer">
+                    <h3>Our Links</h3>
+                    <div class="links">
+                        <ul style="list-style-type: none; gap: 5px" class="red-color">
+                            <li>
+                                <a href="#about-us" style="color: #250303" class="nav">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#history" style="color: #250303" class="nav">History</a>
+                            </li>
+                            <li>
+                                <a href="#event" style="color: #250303" class="nav">Ongoing Events & Promo</a>
+                            </li>
+                            <li>
+                                <a href="#commercial-text" style="color: #250303" class="nav">Commercial Video</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pages-footer">
+            <h3>Visit Our Other Pages</h3>
+            <div style="display: flex; flex-direction: column; row-gap: 10px">
+                <button class = "nav-button" style="margin: 0; border-radius: 5px" onclick="window.location.href = './menu.html'">Menu</button>
+                <button class = "nav-button" style="margin: 0; border-radius: 5px" onclick="window.location.href = './register.html'">Register</button>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 <script src="register.js"></script>
 </html>
