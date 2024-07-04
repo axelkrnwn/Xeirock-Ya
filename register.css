@@ -34,7 +34,7 @@ nav{
 nav ul{ 
     display: flex;
     box-sizing: border-box;
-    padding: 0.5% 2% 0.5% 2%;
+    padding: 1% 2% 1% 2%;
     justify-content: space-around;
 }
 
