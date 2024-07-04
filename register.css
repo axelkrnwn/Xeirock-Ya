@@ -34,8 +34,8 @@ nav{
 nav ul{ 
     display: flex;
     box-sizing: border-box;
+    padding: 0.5% 2% 0.5% 2%;
     justify-content: space-around;
-    padding: 1% 0 1% 0;
 }
 
 ::-webkit-input-placeholder{

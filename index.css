@@ -35,8 +35,8 @@ nav ul{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 0.5% 2% 0 2%;
-    align-items: center;
+    padding: 0.5% 2% 0.5% 2%;
+    /* align-items: center; */
 }
 
 
