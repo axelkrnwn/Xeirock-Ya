@@ -15,7 +15,8 @@
 
 nav{
     background-color: #fbeecd;
-    width: 100%;
+    width: 80%;
+    padding-right: 1%;
     border: 2px solid black;
     box-shadow: black 7px 7px;
 }
@@ -29,7 +30,7 @@ nav ul{
 
 
 .landing_image{
-    height: 90vh;
+    height: 100vh;
     background: url('./asset/landing_image.jpg');
     position: relative;
 }

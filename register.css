@@ -1,8 +1,10 @@
+
+
 .header{
     height: 20vh;
     width: 100vw;
     background: none;
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -11,19 +13,32 @@
     padding-right: 5%;
     z-index: 99;
 }
-
 nav{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding-right: 1%;
+    justify-content: end;
+}
+
+.nav-container{ 
+    width: 50%;
     background-color: #fbeecd;
-    width: 30%;
     border: 2px solid black;
     box-shadow: black 7px 7px;
 }
 
-nav ul{
+
+nav ul{ 
     display: flex;
     box-sizing: border-box;
     justify-content: space-around;
     padding: 1% 0 1% 0;
+}
+
+::-webkit-input-placeholder{
+    color: gray;
 }
 
 #form-1{
