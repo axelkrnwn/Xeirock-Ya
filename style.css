@@ -1,3 +1,32 @@
+
+
+.header-nav{
+    height: 20vh;
+    width: 100vw;
+    background: none;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 99;
+}
+nav{
+    background-color: #fbeecd;
+    width: 30%;
+    border: 2px solid black;
+    box-shadow: black 7px 7px;
+}
+
+nav ul{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding: 1% 0 1% 0;
+}
+
 #prev{
     width: 16%; height: 50%; text-align: center; background-color: #fef7e6; box-shadow: 2px 5px 5px 5px rgb(175, 170, 170); border-radius: 15px; z-index: 10; position: absolute;left: 45%; top: 25%; padding: 2%; transition: all 0.5s ease;
 }

@@ -7,7 +7,7 @@ newCard.id = 'newCard'
 document.getElementById('menu-container').appendChild(newCard)
 
 
-let i = 1
+let i = 0
 
 
 let descs = [
@@ -36,44 +36,51 @@ let prices = [
     'IDR 100.000,-'
 ]
 
+let createNewCard = () => {
 
-let header = document.createElement('h4')
-header.innerHTML = titles[(i + 3)%6]
-newCard.appendChild(header)
-let desc = document.createElement('p')
-desc.innerHTML = descs[(i + 3)%6]
-newCard.appendChild(desc)
-let price = document.createElement('h4')
-price.innerHTML = prices[(i + 3)%6]
-header.className = 'header'
-desc.className = 'desc'
-price.className = 'price'
-newCard.appendChild(price)
+    let header = document.createElement('h4')
+    header.innerHTML = titles[(i + 3)%6]
+    newCard.appendChild(header)
+    let desc = document.createElement('p')
+    desc.innerHTML = descs[(i + 3)%6]
+    newCard.appendChild(desc)
+    let price = document.createElement('h4')
+    price.innerHTML = prices[(i + 3)%6]
+    header.className = 'header'
+    desc.className = 'desc'
+    price.className = 'price'
+    newCard.appendChild(price)
+
+}
+
+createNewCard()
+
 
 function change(){
-    document.getElementById('ramen').style.opacity = 0;
+    document.getElementById('ramen').style.opacity = '0';
     setTimeout(() => {
-        document.getElementById('ramen').src = `./asset/ramen_${i}.jpg`
-        document.getElementById('ramen').style.opacity = 1;
+        document.getElementById('ramen').src = `./asset/ramen_${i+1}.jpg`
+        document.getElementById('ramen').style.opacity = '1';
     }, 500);
     
     // document.getElementById('next-header').innerHTML = titles[i-1]
     // document.getElementById('next-desc').innerHTML = descs[i-1]
-    // document.getElementById('next-price').innerHTML = prices[i-1]s
+    // document.getElementById('next-price').innerHTML = prices[i-1]
 }
 
 change()
 
 movePrev = () => {
-    if (i == 1) i = 6
-    else i--
+    if (i >= 5) i = 0
+    else i++
     curr.style.left = '45%'
     next.style.left = '70%'
     prev.style.left = '20%'
     prev.style.opacity = '0'
     newCard.style.left = '95%'
-    
+    console.log(i)
     change()
+
     setTimeout(() => {
         document.getElementById('menu-container').removeChild(prev)
         curr.id = 'prev'
@@ -84,25 +91,12 @@ movePrev = () => {
         next = newCard
         newCard = document.createElement('div')
         newCard.id = 'newCard'
-        let header = document.createElement('h4')
-        header.innerHTML = titles[0]
-        newCard.appendChild(header)
-        let desc = document.createElement('p')
-        desc.innerHTML = descs[0]
-        newCard.appendChild(desc)
-        let price = document.createElement('h4')
-        price.innerHTML = prices[0]
-        header.className = 'header'
-        desc.className = 'desc'
-        price.className = 'price'
-        newCard.appendChild(header)
-        newCard.appendChild(desc)
-        newCard.appendChild(price)
-
+        createNewCard()
         document.getElementById('menu-container').appendChild(newCard)
         prev.addEventListener('click', movePrev)
         curr.addEventListener('click', movePrev)
     }, 500);
+
 }
 
 prev.addEventListener('click', movePrev)

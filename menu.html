@@ -14,30 +14,27 @@
 </head>
 <body style="margin: 0; padding: 0; font-family: 'Poppins'; overflow-x: hidden; background-color: rgb(249, 249, 233);">
    <!-- Header -->
-   <header style="display: flex; justify-content: space-between;  padding-bottom: 15px; padding-top: 15px; align-items: center; padding-left: 30px; position: sticky; top: 0; z-index: 99; background-color: #f0ca72; padding-right: 30px;">
-       <div style="width: 70%;">
+   <div class = "header-nav">
+       <header>
            <a href="./index.html">
-               <img src="./asset/logo.png" alt="" style="width: 25%; height: auto;">
+               <img src="./asset/logo.png" alt="" style="width: 33%; height: auto;">
            </a>
-       </div>
-       <div style="width: 50%; display: flex;  justify-content: end; gap: 4rem; size: 10px; opacity: 100%; font-weight: bolder; font-size: large;">
-           <a href="./menu.html" style="color: black;" class="nav">Menu</a>
-           <a href="./register.html" style="color: black;" class="nav">Register Membership</a>
-       </div>
-   </header>
+       </header>
+       <nav>
+           <ul style="display: flex; list-style-type: none;" class="red-color">
+               <li>
+                   <a href="./menu.html" style="color: #250303" class="nav">Menu</a>
+               </li>
+               <li>
+                   <a href="./register.html" style="color: #250303" class="nav">Register</a>
+               </li>
+           </ul>
+       </nav>
+   </div>
 
    <!-- Content -->
-    <div style="width: 100%; padding-top: 20px; padding-bottom: 20px; background-color: #f8e7bc; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <marquee >
-            <h1 style="color: #250303;  letter-spacing: .1rem; font-size: x-large;
-            animation: marquee-scroll 10s linear infinite;">
-                Enjoy Our Delicious and Authentic Menu    
-            </h1>
-        </marquee>
-    </div>
 
-
-    <section style="display: flex; justify-content: space-around; width: 100%; height: 100vh;">
+    <section style="display: flex; justify-content: space-around; width: 100%; height: 120vh;">
         <div style="position: relative; width: 100%; height: 100%;" id = "menu-container">
             <img id = "ramen" src="./asset/ramen_3.jpg" style="width:100%; height: 100%; position: absolute; z-index: 1; left: 0; top: 0; transition: all 0.5s ease;" alt="">
             <div id = "prev">
@@ -46,14 +43,14 @@
                 <h4 id = "prev-price" class = "price">IDR 80.000,-</h4>
             </div>
             <div id="curr">
-                <h4 id = "curr-header" class = "header">Toripaitan Ramen Miso</h4>
-                <p id = "curr-desc" class = "desc" >Toripaitan ramen miso is a delectable Japanese noodle dish that combines a creamy chicken-based broth with the rich, savory flavor of miso paste. The broth is silky and full-bodied, made by simmering chicken bones until they release their collagen, resulting in a smooth, milky texture</p>
-                <h4 id = "curr-price" class = "price">IDR 80.000,-</h4>
+                <h4 id = "curr-header" class = "header">Toripaitan ramen shoyu</h4>
+                <p id = "curr-desc" class = "desc" >Toripaitan ramen shoyu is a flavorful Japanese noodle dish that blends a creamy, chicken-based broth with the deep, savory notes of shoyu (soy sauce). The broth is rich and velvety, achieved by simmering chicken bones to extract their collagen, resulting in a smooth, milky texture.</p>
+                <h4 id = "curr-price" class = "price">IDR 60.000,-</h4>
             </div>
             <div id = 'next'>
-                <h4 id = "next-header" class = "header">Toripaitan Ramen Miso</h4>
-                <p id = "next-desc" class = "desc" >Toripaitan ramen miso is a delectable Japanese noodle dish that combines a creamy chicken-based broth with the rich, savory flavor of miso paste. The broth is silky and full-bodied, made by simmering chicken bones until they release their collagen, resulting in a smooth, milky texture</p>
-                <h4 id = "next-price" class = "price" >IDR 80.000,-</h4>
+                <h4 id = "next-header" class = "header">Toripaitan Ramen shio</h4>
+                <p id = "next-desc" class = "desc" >Toripaitan ramen shio is a refined Japanese noodle dish featuring a silky, creamy chicken-based broth seasoned with shio (salt) for a light and delicate flavor. The broth is created by simmering chicken bones until they dissolve, producing a smooth and rich consistency.</p>
+                <h4 id = "next-price" class = "price" >IDR 120.000,-</h4>
             </div>
         </div>
     </section>
