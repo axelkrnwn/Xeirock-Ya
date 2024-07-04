@@ -24,6 +24,7 @@ nav{
 
 .nav-container{ 
     width: 50%;
+    height: 25%;
     background-color: #fbeecd;
     border: 2px solid black;
     box-shadow: black 7px 7px;
@@ -66,20 +67,12 @@ nav ul{
 }
 
 .header{
-    color: black; font-size: 22px; letter-spacing: .2rem;  text-align: center;
+    color: black; font-size: 22px; text-align: center;
 }
 .desc{
     font-size: 16px;
 }
 .price{
-    color:  rgb(255, 166, 0); font-size: 16px; letter-spacing: .2rem;  text-align: center;
+    color:  rgb(255, 166, 0); font-size: 16px; text-align: center;
 }
 
-
-.nav {
-    text-decoration: none;
-}
-
-.nav:hover {
-    text-decoration: underline;
-}

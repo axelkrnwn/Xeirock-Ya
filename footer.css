@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+li:hover{
+    text-decoration: underline;
+}
+
 .img-footer{
     align-items: start;
     width: 25%;
