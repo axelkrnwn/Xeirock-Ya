@@ -61,8 +61,8 @@ nav ul{
     font-size: 72px;
 }
 
-#subtitle{
-    color: rgb(255, 166, 0);
+#subtitle{    color: #fbeecd;
+    text-shadow: 5px 5px 4px #250303;
     font-weight: 400;
     font-size: 32px;
 }
