@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
 
     if (window.scrollY + navbar.clientHeight >= element.getBoundingClientRect().top){
         navbar.style.backgroundColor = '#fbeecd'
-        navbar.style.height = '11vh'
+        navbar.style.height = '12vh'
         document.querySelector('.nav-container').style.boxShadow = 'none'
         document.querySelector('.nav-container').style.border = 'none'
     }else{
