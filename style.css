@@ -1,7 +1,7 @@
 
 
 .header-nav{
-    height: 20vh;
+    height: 16vh;
     width: 100vw;
     background: none;
     position: fixed;
@@ -27,7 +27,7 @@ nav{
     height: 25%;
     background-color: #fbeecd;
     border: 2px solid black;
-    box-shadow: black 7px 7px;
+    box-shadow: black 3px 3px;
 }
 
 
@@ -46,6 +46,7 @@ nav ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 #curr{
@@ -53,6 +54,7 @@ nav ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 #next{

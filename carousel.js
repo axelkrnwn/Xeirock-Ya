@@ -14,7 +14,7 @@ let descs = [
     'Toripaitan ramen miso is a delectable Japanese noodle dish that combines a creamy chicken-based broth with the rich, savory flavor of miso paste. The broth is silky and full-bodied, made by simmering chicken bones until they release their collagen, resulting in a smooth, milky texture',
     'Toripaitan ramen shoyu is a flavorful Japanese noodle dish that blends a creamy, chicken-based broth with the deep, savory notes of shoyu (soy sauce). The broth is rich and velvety, achieved by simmering chicken bones to extract their collagen, resulting in a smooth, milky texture.',
     'Toripaitan Ramen Shio is a refined Japanese noodle dish featuring a silky, creamy chicken-based broth seasoned with shio (salt) for a light and delicate flavor. The broth is created by simmering chicken bones until they dissolve, producing a smooth and rich consistency.',
-    'Toripaitan Ramen Ekstrim is a luxurious Japanese noodle dish featuring an exceptionally creamy and rich chicken-based broth, achieved by boiling chicken bones for hours until they dissolve into a milky consistency.',
+    'Toripaitan Ramen Extreme is a luxurious Japanese noodle dish featuring an exceptionally creamy and rich chicken-based broth, achieved by boiling chicken bones for hours until they dissolve into a milky consistency.',
     'Tokyo Ramen is a popular Japanese noodle dish characterized by its clear, soy-based broth, typically made from chicken bones, fish, and vegetables. It features curly, medium-thick noodles and is often garnished with toppings such as sliced chicken, menma, nori, and a soft-boiled egg.',
     'Spicy Ramen is a bold and flavorful Japanese noodle dish known for its rich, fiery broth, which often includes chili paste, garlic, and other spices to create a deep heat. The noodles are typically thick and chewy, paired with toppings like sliced chicken, green onions, and soft-boiled eggs'
 ]
@@ -23,7 +23,7 @@ let titles = [
     'Toripaitan Ramen Miso',
     'Toripaitan Ramen Shoyu',
     'Toripaitan Ramen Shio',
-    'Toripaitan Ramen Ekstrim',
+    'Toripaitan Ramen Extreme',
     'Tokyo Ramen',
     'Spicy Ramen'
 ]
