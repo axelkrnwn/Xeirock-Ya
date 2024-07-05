@@ -2,6 +2,7 @@
 
 .header{
     height: 16vh;
+    padding-top: 1%;
     width: 100vw;
     background: none;
     position: fixed;
@@ -33,6 +34,7 @@ nav{
 }
 
 nav ul{
+    overflow: hidden;
     box-sizing: border-box;
     display: flex;
     height: 100%;
