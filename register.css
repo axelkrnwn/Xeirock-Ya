@@ -23,8 +23,8 @@ nav{
 }
 
 .nav-container{ 
-    width: 35%;
-    height: 40%;
+    width: 35%;   
+    height: 25%;
     background-color: #fbeecd;
     border: 2px solid black;
     box-shadow: black 3px 3px;
