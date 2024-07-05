@@ -24,7 +24,8 @@ nav{
 
 .nav-container{ 
     width: 35%;
-    height: 25%;
+    height: 40%;
+    transition: 0.8s all ease;
     background-color: #fbeecd;
     border: 2px solid black;
     box-shadow: black 3px 3px;
