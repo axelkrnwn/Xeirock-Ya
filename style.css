@@ -4,6 +4,7 @@
     height: 16vh;
     width: 100vw;
     padding-top: 1%;
+    padding-bottom: 1%;
     background: none;
     position: fixed;
     display: flex;
