@@ -2,15 +2,19 @@ let navbar = document.querySelector('#navbar')
 
 
 let firstElement ={
-    '/index.html' : document.getElementById('about-us'),
-    '/menu.html' : document.querySelector('#prev'),
-    '/register.html' : document.querySelector('#form-1'),
+    ''              : document.getElementById('about-us'),
+    'index.html'    : document.getElementById('about-us'),
+    'menu.html'     : document.querySelector('#prev'),
+    'register.html' : document.querySelector('#form-1'),
 }
 
 window.addEventListener('scroll', () => {
 
-    let attr = window.location.pathname
-    let element = firstElement[attr]
+    let attr = window.location.pathname.split('/')
+    console.log(attr)
+
+    console.log(attr[attr.length - 1])
+    let element = firstElement[attr[attr.length - 1]]
     
 
     if (window.scrollY + navbar.clientHeight >= element.getBoundingClientRect().top){
